@@ -37,6 +37,13 @@ const config = {
                     50: 'rgba(219,39,99,0.5)',
                     DEFAULT: '#DB2763',
                 },
+                success: {
+                    10: 'rgba(18,234,234,0.1)',
+                    50: 'rgba(18,234,234,0.5)',
+                    DEFAULT: '#12EAEA',
+                    dark: '#028090',
+                    darker: '#1A5E63',
+                },
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
