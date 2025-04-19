@@ -16,6 +16,13 @@ const config = {
                     darker: '#34731A',
                     darkest: '#1E5508',
                 },
+                secondary: {
+                    lighter: '#7F5CFB',
+                    light: '#6E4CE9',
+                    DEFAULT: '#623CEA',
+                    dark: '#4F25E8',
+                    darker: '#401AC8',
+                },
                 black: {
                     lighter: '#1E2A3C',
                     light: '#192435',
