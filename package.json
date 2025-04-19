@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p $NEXT_PORT",
+    "dev": "cross-env NEXT_PORT=3001 next dev -p $NEXT_PORT",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
