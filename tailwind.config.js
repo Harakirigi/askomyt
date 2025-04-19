@@ -53,7 +53,8 @@ const config = {
                 },
             },
             fontFamily: {
-                sans: ['Geist', 'ui-sans-serif', 'system-ui'],
+                sans: ['var(--font-geist-sans)', 'ui-sans-serif'],
+                mono: ['var(--font-geist-mono)', 'monospace'],
             },
             spacing: {
                 '72': '18rem',
