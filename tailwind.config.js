@@ -16,6 +16,22 @@ const config = {
                     darker: '#34731A',
                     darkest: '#1E5508',
                 },
+                black: {
+                    lighter: '#1E2A3C',
+                    light: '#192435',
+                    DEFAULT: '#141D2B',
+                    dark: '#111926',
+                    darker: '#0D141F',
+                },
+                white: {
+                    DEFAULT: '#FFFFFF',
+                    100: '#EAEAEA',
+                    200: '#D7D7D7',
+                    300: '#C3C3C3',
+                    400: '#ADADAD',
+                    500: '#9D9D9D',
+                    600: '#848484',
+                },
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
