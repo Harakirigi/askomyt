@@ -53,8 +53,7 @@ const config = {
                 },
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-                funky: ['"Comic Sans MS"', 'cursive'],
+                sans: ['Geist', 'ui-sans-serif', 'system-ui'],
             },
             spacing: {
                 '72': '18rem',
