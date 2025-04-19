@@ -32,6 +32,11 @@ const config = {
                     500: '#9D9D9D',
                     600: '#848484',
                 },
+                danger: {
+                    10: 'rgba(219,39,99,0.1)',
+                    50: 'rgba(219,39,99,0.5)',
+                    DEFAULT: '#DB2763',
+                },
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
