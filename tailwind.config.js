@@ -8,9 +8,13 @@ const config = {
         extend: {
             colors: {
                 accent: {
-                    light: '#28CFBD',
-                    DEFAULT: '#10AAA6',
-                    dark: '#090B0C',
+                    10: 'rgba(159,239,0,0.1)',
+                    50: 'rgba(159,239,0,0.5)',
+                    DEFAULT: '#9FEF00',
+                    hover: '#75CA06',
+                    dark: '#3DA113',
+                    darker: '#34731A',
+                    darkest: '#1E5508',
                 },
             },
             fontFamily: {
