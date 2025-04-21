@@ -8,7 +8,7 @@ export default function Home() {
         <div className="p-4 font-thin text-white bg-accent-50 text-shadow-transparent">bg-accent</div>
         <div className="p-4 font-extrabold text-secondary bg-accent">bg-accent-light</div>
         <div className="p-4 font-mono text-white bg-accent-dark">ASASASA</div>
-        <Button variant={'accent'}>dsfkldsfjasldkfjldkssjdkasjdsakldjsalk </Button>
+        <Button>dsfkldsfjasldkfjldkssjdkasjdsakldjsalk </Button>
 
     </div>
 </>
