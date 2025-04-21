@@ -20,6 +20,7 @@ const config = {
                     lighter: '#7F5CFB',
                     light: '#6E4CE9',
                     DEFAULT: '#623CEA',
+                    hover: '#4F25E8',
                     dark: '#4F25E8',
                     darker: '#401AC8',
                 },
@@ -65,9 +66,20 @@ const config = {
                 xs: '480px',
                 '3xl': '1920px',
             },
+            clipPath: {
+                'erased-shape': 'polygon(15% 0, 100% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 100%, 0 15%)',
+            },
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addUtilities }) {
+            addUtilities({
+                '.clip-erased-shape': {
+                    clipPath: 'polygon(15% 0, 100% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 100%, 0 15%)',
+                },
+            });
+        },
+    ],
 }
 
 export default config
