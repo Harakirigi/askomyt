@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const Button = ({
 
-    className,
+    styles,
     variant,
     children,
     icon,
@@ -40,7 +40,7 @@ const Button = ({
 
     // icons should be 24x24
     return (
-        <button className={`${baseClass} ${variantClasses[variant] || variantClasses.accent} ${className}`}>
+        <button className={`${baseClass} ${variantClasses[variant] || variantClasses.accent} ${styles}`}>
             {icon && <span>{icon}</span>}
             {children}
         </button>

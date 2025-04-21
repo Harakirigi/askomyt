@@ -9,7 +9,7 @@ export default function Home() {
         <div className="p-4 font-thin text-white bg-accent-50 text-shadow-transparent">bg-accent</div>
         <div className="p-4 font-extrabold bg-black text-secondary">bg-accent-light</div>
         <div className="p-4 font-mono text-white bg-accent-dark">ASASASA</div>
-        <Button icon={<Box color="rgb(20 29 43)"></Box>}>dsfkldsfjasldkfjldkssjdkasjdsakldjsalk </Button>
+        <Button variant={'primary'} icon={<Box></Box>}>adfjksdjhfdsh</Button>
 
     </div>
 </>
