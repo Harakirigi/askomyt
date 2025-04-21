@@ -1,3 +1,4 @@
+import Button from "@/components/button";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
         <div className="p-4 font-thin text-white bg-accent-50 text-shadow-transparent">bg-accent</div>
         <div className="p-4 font-extrabold text-secondary bg-accent">bg-accent-light</div>
         <div className="p-4 font-mono text-white bg-accent-dark">bg-accent-dark</div>
+        <Button></Button>
     </div>
 </>
     
