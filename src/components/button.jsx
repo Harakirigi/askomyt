@@ -11,12 +11,12 @@ const Button = ({
 
 }) => {
 
-    const baseClass = 'w-full max-w-max min-w-[150px] h-11 flex justify-center items-center gap-2 px-4 border border-transparent rounded-lg font-sans font-medium text-base transition-all duration-300'
+    const baseClass = 'w-full max-w-max min-w-[150px] h-11 flex justify-center items-center gap-2 px-4 rounded-lg font-sans font-medium text-base transition-all duration-300'
 
     const variantClasses = {
-        accent: 'bg-accent text-black border-transparent hover:bg-accent-hover hover:text-black-dark uppercase font-bold',
-        accentOutline: 'bg-transparent text-accent border-accent hover:text-accent-hover hover:border-accent-hover uppercase font-bold',
-        accentText: 'bg-transparent text-accent border-transparent hover:text-accent-hover uppercase font-bold',
+        accent: 'bg-accent text-black border-transparent hover:bg-accent-hover hover:text-black-dark uppercase font-semibold',
+        accentOutline: 'bg-transparent text-accent border border-accent hover:text-accent-hover hover:border-accent-hover uppercase font-semibold',
+        accentText: 'bg-transparent text-accent border-transparent hover:text-accent-hover uppercase font-semibold',
         
         primary: 'bg-white text-black border-transparent hover:bg-white-200 hover:text-black-dark',
         primaryOutline: 'bg-transparent text-white border-white hover:text-white-200 hover:border-white-200',
