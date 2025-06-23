@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Button from "./button";
 import NavLink from "./navLink";
 import LanguageSwitcher from "./languageSwitcher";
+import InterStyledButton from "./interStyledButton";
 
 const Header: React.FC = () => {
     const t = useTranslations('header');

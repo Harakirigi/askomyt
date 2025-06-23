@@ -29,7 +29,7 @@ const TechStackSection: React.FC = () => {
 
     return (
         <section className="flex flex-row items-center justify-between h-40 bg-black gap-y-6 w-dvh">
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center" data-aos="fade-right" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-out">
                 <div className="relative h-12">
                     <p className="text-5xl font-medium text-gray-300 uppercase">{t('iBuildWith')}</p>
                     <AnimatePresence mode="wait">
@@ -46,7 +46,7 @@ const TechStackSection: React.FC = () => {
                     </AnimatePresence>
                 </div>
             </div>
-            <div className="relative flex flex-row items-end pt-10 gap-x-4">
+            <div className="relative flex flex-row items-end pt-10 gap-x-4" data-aos="fade-left" data-aos-offset="120" data-aos-duration="600" data-aos-easing="ease-out">
                 {techStacks.map((tech) => (
                     <TechIcon
                         key={tech.name}

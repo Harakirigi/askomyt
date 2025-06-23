@@ -28,7 +28,7 @@ const ProjectCard = ({
 
     return (
         <>
-            <div className="relative group w-[550px] h-max border border-accent-50 rounded-2xl overflow-hidden">
+            <div className="relative group w-[550px] h-max border border-accent-50 rounded-2xl overflow-hidden" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800" data-aos-easing="ease-out">
                 <div className="relative w-full h-[150px]">
                     <Image
                         src={image}

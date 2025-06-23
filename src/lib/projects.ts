@@ -1,12 +1,12 @@
 interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  techs: string[];
-  sourceLink?: string;
-  previewLink?: string;
-  fullDetails?: string
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    techs: string[];
+    sourceLink?: string;
+    previewLink?: string;
+    fullDetails?: string
 }
 
 const projects: Project[] = [
@@ -15,7 +15,7 @@ const projects: Project[] = [
         "title": "statGovParser",
         "description": "StatGovParser - application that can parse and download xlsx, json and csv files from stat.gov.kz website.",
         "image": "/images/projects/statGovParser.png",
-        "techs": ['python', 'beautiful soup', 'beautiful soup', 'beautiful soup', 'beautiful soup', 'beautiful soup', 'beautiful soup', 'beautiful soup'],
+        "techs": ['python', 'beautiful soup'],
         "sourceLink": "https://github.com/example/source",
         "previewLink": "https://example.com/demo",
         "fullDetails": "/stat-gov-parser",
