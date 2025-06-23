@@ -26,6 +26,31 @@ body {
 }
 
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: theme(colors.black.darker);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: theme(colors.gray.700);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme(colors.gray.500);
+}
+
+::selection {
+  background: theme(colors.accent.50);
+  color: white;
+}
+::-moz-selection {
+  background: theme(colors.accent.50);
+  color: white;
+}
+
 /* .btn {
     width: 100%;
     max-width: max-content;

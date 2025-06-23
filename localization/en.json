@@ -1,0 +1,30 @@
+{
+  "header": {
+    "aboutMe": "About Me",
+    "myProjects": "My Projects",
+    "contactMe": "Contact Me",
+    "myCv": "MY CV",
+    "reachOut": "REACH OUT",
+    "language": "Language",
+    "english": "EN",
+    "russian": "RU",
+    "kazakh": "KZ"
+  },
+  "hero": {
+    "location": "Astana, Kazakhstan",
+    "data": "Data",
+    "scientist": "Scientist",
+    "software": "Software",
+    "developer": "Developer",
+    "name": "Asylbek Komyt",
+    "myWorks": "MY WORKS",
+    "contactMe": "CONTACT ME"
+  },
+  "techStack": {
+    "iBuildWith": "I build with",
+    "everything": "everything"
+  },
+  "myWorks": {
+    "title": "My Works"
+  }
+}

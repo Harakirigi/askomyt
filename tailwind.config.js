@@ -66,6 +66,14 @@ const config = {
                 xs: '480px',
                 '3xl': '1920px',
             },
+            fontSize: {
+                buttonTextSize: '1rem',
+                headingSize: '3.75rem',
+                heading2Size: '3rem',
+                heading3Size: '2.25rem',
+
+
+            },
             clipPath: {
                 'erased-shape': 'polygon(15% 0, 100% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 100%, 0 15%)',
             },

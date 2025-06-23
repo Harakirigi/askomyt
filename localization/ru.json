@@ -1,0 +1,30 @@
+{
+  "header": {
+    "aboutMe": "Обо мне",
+    "myProjects": "Мои проекты",
+    "contactMe": "Связаться со мной",
+    "myCv": "Моё резюме",
+    "reachOut": "Написать",
+    "language": "Язык",
+    "english": "EN",
+    "russian": "RU",
+    "kazakh": "KZ"
+  },
+  "hero": {
+    "location": "Астана, Казахстан",
+    "data": "Data",
+    "scientist": "Scientist",
+    "software": "Software",
+    "developer": "Developer",
+    "name": "Асылбек Комыт",
+    "myWorks": "Мои работы",
+    "contactMe": "Связаться"
+  },
+  "techStack": {
+    "iBuildWith": "Я работаю с",
+    "everything": "всем"
+  },
+  "myWorks": {
+    "title": "Мои работы"
+  }
+}

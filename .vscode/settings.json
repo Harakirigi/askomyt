@@ -11,6 +11,18 @@
     ["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["classnames\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["tw\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ],
+],
+"[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+},
+"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+},
+"[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+},
 }
   
