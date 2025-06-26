@@ -7,6 +7,7 @@ interface ButtonProps {
   icon?: React.ReactNode;
   disabled?: boolean;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  type?: "button" | "submit" | "reset"
 }
 
 const Button: React.FC<ButtonProps> = ({ 
@@ -15,7 +16,8 @@ const Button: React.FC<ButtonProps> = ({
   children, 
   icon, 
   disabled = false, 
-  onClick 
+  onClick,
+  type
 }) => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (disabled) {
@@ -56,6 +58,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={handleClick}
       disabled={disabled}
       aria-disabled={disabled}
+      type={type}
     >
       {icon && <span>{icon}</span>}
       {children}

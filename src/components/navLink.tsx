@@ -1,3 +1,5 @@
+'use client'
+import { useState } from "react";
 import Link from "next/link";
 
 interface NavLinkProps {
@@ -8,13 +10,28 @@ interface NavLinkProps {
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ href = "#", styles = "", children = "Link", icon }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <>
             <Link
-                className={`font-semibold text-white uppercase hover:text-white-400 transition-all duration-300 ${styles}`}
+                className={`relative inline-block font-semibold text-white uppercase hover:text-accent transition-all duration-300 ${styles}`}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
                 href={href}
             >
                 {children}
+                <span
+                    className={`
+                        absolute left-0 -bottom-1 w-full h-0.5 bg-accent
+                        transition-all duration-500 ease-in-out
+                        ${isHovered ? 'opacity-100' : 'opacity-0'}
+                    `}
+                    style={{
+                        transform: isHovered ? 'scaleX(1)' : 'scaleX(0)',
+                        transformOrigin: 'center',
+                    }}
+                />
             </Link>
         </>
     );

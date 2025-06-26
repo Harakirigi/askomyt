@@ -12,6 +12,7 @@ const nextConfig = {
         config.resolve.alias['@app'] = path.resolve(__dirname, 'app');
         config.resolve.alias['@components'] = path.resolve(__dirname, 'components');
         config.resolve.alias['@lib'] = path.resolve(__dirname, 'lib');
+        config.resolve.alias['@contexts'] = path.resolve(__dirname, 'contexts');
         return config;
     },
 

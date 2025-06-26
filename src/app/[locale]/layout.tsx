@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "../../styles/globals.css";
 import Header from "@components/header";
+import { AppProvider } from '@contexts/appContext';
+import AOSInitializer from '@components/AOSInitializer';
 
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
@@ -37,8 +39,11 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async ({ children, params }) =
         <html lang={locale}>
             <body className={`${geistSans.variable} ${geistMono.variable} bg-black`}>
                 <NextIntlClientProvider>
-                    <Header />
-                    {children}
+                    <AppProvider>
+                        <AOSInitializer />
+                        <Header />
+                        {children}
+                    </AppProvider>
                 </NextIntlClientProvider>
             </body>
         </html>

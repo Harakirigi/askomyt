@@ -6,7 +6,9 @@ interface Project {
     techs: string[];
     sourceLink?: string;
     previewLink?: string;
-    fullDetails?: string
+    fullDetails?: string;
+    downloadable?: boolean;
+    filePath?: string;
 }
 
 const projects: Project[] = [
@@ -19,6 +21,8 @@ const projects: Project[] = [
         "sourceLink": "https://github.com/example/source",
         "previewLink": "https://example.com/demo",
         "fullDetails": "/stat-gov-parser",
+        "downloadable": true,
+        "filePath": '/products/statGovParser.exe'
     },
     {
         "id": 2,
