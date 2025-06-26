@@ -24,7 +24,45 @@
     "iBuildWith": "I build with",
     "everything": "everything"
   },
-  "myWorks": {
-    "title": "My Works"
+  "myPortfolio": {
+    "title": "My Portfolio",
+    "showAll": "Show All Projects",
+    "back": "Back"
+  },
+  "footer": {
+    "footerDescription": "FullStack Developer and Data Analyst based in Astana, Kazakhstan.",
+    "home": "Home",
+    "contact": "Contact",
+    "cv": "CV",
+    "copyright": "© {year} Asylbek Komyt. All rights reserved."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "namePlaceholder": "Your Name",
+    "messagePlaceholder": "Your Message",
+    "send": "Send Message",
+    "email": "nkomyt2@gmail.com",
+    "phone": "+77787050395",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "reachMe": {
+    "title": "Reach Me",
+    "email": "nkomyt2@gmail.com",
+    "phone": "+77787050395",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "cv": {
+    "back": "Back",
+    "downloadCV": "Download CV",
+    "cutItDown": "Cut it Down",
+    "about": "About"
+  },
+  "projectDetails": {
+    "back": "Back",
+    "sourceCode": "Source Code",
+    "preview": "Preview",
+    "download": "Download"
   }
 }

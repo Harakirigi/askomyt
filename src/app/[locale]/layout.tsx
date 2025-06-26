@@ -1,12 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "../../styles/globals.css";
+import "@styles/globals.css";
 import Header from "@components/header";
+import Footer from "@components/footer";
 import { AppProvider } from '@contexts/appContext';
 import AOSInitializer from '@components/AOSInitializer';
-
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
+import { routing } from '@i18n/routing';
+import { Toaster } from "@components/ui/sonner"
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -18,10 +19,29 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-export const metadata = {
-    title: "AsKomyt",
-    description: "Asylbek Komyt | Portfolio | I am FullStack Developer and Data Analyst, currently 19 y.o and from Astana/Kazakhstan",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    return {
+        title: 'Asylbek Komyt | Portfolio',
+        description: 'Portfolio of Asylbek Komyt, a FullStack Developer and Data Analyst based in Astana, Kazakhstan.',
+        openGraph: {
+            title: 'Asylbek Komyt | Portfolio',
+            description: 'Portfolio of Asylbek Komyt, a FullStack Developer and Data Analyst based in Astana, Kazakhstan.',
+            url: 'https://askomyt.com',
+            siteName: 'AsKomyt',
+            images: [
+                {
+                    url: '/images/og-image.png',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Asylbek Komyt Portfolio',
+                },
+            ],
+            locale: locale === 'ru' ? 'ru_RU' : locale === 'kz' ? 'kk_KZ' : 'en_US',
+            type: 'website',
+        },
+    };
+}
 
 interface LocaleLayoutProps {
     children: React.ReactNode;
@@ -35,19 +55,20 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async ({ children, params }) =
     }
 
     return (
-
-        <html lang={locale}>
-            <body className={`${geistSans.variable} ${geistMono.variable} bg-black`}>
-                <NextIntlClientProvider>
+        <html lang={locale} className={`${geistSans.variable} ${geistMono.variable}`}>
+            <body className="text-white bg-black">
+                <NextIntlClientProvider locale={locale}>
                     <AppProvider>
                         <AOSInitializer />
                         <Header />
                         {children}
+                        <Footer />
+                        <Toaster />
                     </AppProvider>
                 </NextIntlClientProvider>
             </body>
         </html>
     );
-}
+};
 
 export default LocaleLayout;

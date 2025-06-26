@@ -7,9 +7,10 @@ interface NavLinkProps {
     styles?: string;
     children?: React.ReactNode;
     icon?: React.ReactNode;
+    onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href = "#", styles = "", children = "Link", icon }) => {
+const NavLink: React.FC<NavLinkProps> = ({ href = "#", styles = "", children = "Link", icon, onClick }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -18,6 +19,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href = "#", styles = "", children = "
                 className={`relative inline-block font-semibold text-white uppercase hover:text-accent transition-all duration-300 ${styles}`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={onClick}
                 href={href}
             >
                 {children}

@@ -13,6 +13,9 @@ const nextConfig = {
         config.resolve.alias['@components'] = path.resolve(__dirname, 'components');
         config.resolve.alias['@lib'] = path.resolve(__dirname, 'lib');
         config.resolve.alias['@contexts'] = path.resolve(__dirname, 'contexts');
+        config.resolve.alias['@utils'] = path.resolve(__dirname, 'utils');
+        config.resolve.alias['@styles'] = path.resolve(__dirname, 'styles');
+        config.resolve.alias['@i18n'] = path.resolve(__dirname, 'i18n');
         return config;
     },
 
