@@ -15,7 +15,7 @@ interface ProjectCard {
     previewLink?: string,
     fullDetails?: string;
     downloadable: boolean;
-    filePath: string;
+    filePath?: string;
 }
 
 const ProjectCard = ({

@@ -8,9 +8,10 @@ import { Github, Linkedin } from 'lucide-react';
 const Footer: React.FC = () => {
   const t = useTranslations('footer');
   const { hideHeader } = useAppContext();
+  const { hideFooter } = useAppContext();
 
   return (
-    <footer className={`bg-black-dark text-white py-8 w-dvw ${hideHeader ? 'mt-0' : 'mt-14'}`}>
+    <footer className={`bg-black-dark z-50 bottom-0 left-0 overflow-x-hidden text-white py-8 w-dvw ${hideHeader ? 'mt-0' : 'mt-14'} ${hideFooter ? '-translate-y-16 opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'}`}>
       <div className="mx-[320px] flex flex-col gap-y-6">
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-col gap-y-2">

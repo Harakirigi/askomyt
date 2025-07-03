@@ -10,16 +10,19 @@ import { useTranslations } from 'next-intl';
 const CV: React.FC = () => {
     const t = useTranslations('cv');
     const { setHideHeader } = useAppContext();
+    const { setHideFooter } = useAppContext();
 
     useEffect(() => {
         setHideHeader(true);
+        setHideFooter(true);
         return () => {
             setTimeout(() => setHideHeader(false), 500);
+            setTimeout(() => setHideFooter(false), 500);
         };
-    }, [setHideHeader]);
+    }, [setHideHeader, setHideFooter]);
 
     return (
-        <section className="flex items-center justify-center bg-black w-dvw min-h-dvh">
+        <section className="flex items-center justify-center -mb-32 bg-black w-dvw min-h-dvh">
             <main className="flex flex-col max-w-[600px] min-w-[300px] py-8 px-4">
                 <div className="flex justify-between mb-6" data-aos="fade-down" data-aos-duration="400" data-aos-easing="ease-out">
                     <Button variant="primaryOutline" styles="text-xs" icon={<ArrowLeftSquareIcon />} onClick={() => window.location.href = '/'}>
@@ -65,15 +68,15 @@ const CV: React.FC = () => {
 
                 {cv.sections.map((section) => (
                     <div key={section.id}>
-                        <p className="py-4 text-base font-medium text-white capitalize" data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-out">
+                        <p className="py-4 text-base font-medium text-white capitalize" data-aos="fade-right" data-aos-offset="-1000" data-aos-duration="400" data-aos-easing="ease-out">
                             {section.title}
                         </p>
                         {section.items.map((item) => (
                             <div className="grid grid-cols-[1fr,2fr] p-2 -mx-2 rounded-lg group gap-6 border border-transparent hover:border-gray-600" key={item.id}>
-                                <div className="py-2" data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-out">
+                                <div className="py-2" data-aos="fade-right" data-aos-offset="-1000" data-aos-duration="400" data-aos-easing="ease-out">
                                     <p className="text-sm font-light capitalize text-white-300">{item.year}</p>
                                 </div>
-                                <div className="py-2" data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-out">
+                                <div className="py-2" data-aos="fade-left" data-aos-offset="-1000" data-aos-duration="400" data-aos-easing="ease-out">
                                     {item.isLink ? (
                                         <a
                                             href={item.year === 'phone' ? `tel:${item.link}` : item.year === 'email' ? `mailto:${item.link}` : item.link}

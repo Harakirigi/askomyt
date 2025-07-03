@@ -10,12 +10,12 @@ const HeroSection: React.FC = () => {
 
     useEffect(() => {
         const timers = [
-            setTimeout(() => setBlurry(prev => [false, prev[1], prev[2], prev[3], prev[4], prev[5]]), 300),
-            setTimeout(() => setBlurry(prev => [prev[0], false, prev[2], prev[3], prev[4], prev[5]]), 500),
-            setTimeout(() => setBlurry(prev => [prev[0], prev[1], false, prev[3], prev[4], prev[5]]), 700),
-            setTimeout(() => setBlurry(prev => [prev[0], prev[1], prev[2], false, prev[4], prev[5]]), 900),
-            setTimeout(() => setBlurry(prev => [prev[0], prev[1], prev[2], prev[3], false, prev[5]]), 1100),
-            setTimeout(() => setBlurry(prev => [prev[0], prev[1], prev[2], prev[3], prev[4], false]), 1300),
+            setTimeout(() => setBlurry(prev => [false, prev[1], prev[2], prev[3], prev[4], prev[5]]), 100),
+            setTimeout(() => setBlurry(prev => [prev[0], false, prev[2], prev[3], prev[4], prev[5]]), 200),
+            setTimeout(() => setBlurry(prev => [prev[0], prev[1], false, prev[3], prev[4], prev[5]]), 300),
+            setTimeout(() => setBlurry(prev => [prev[0], prev[1], prev[2], false, prev[4], prev[5]]), 400),
+            setTimeout(() => setBlurry(prev => [prev[0], prev[1], prev[2], prev[3], false, prev[5]]), 500),
+            setTimeout(() => setBlurry(prev => [prev[0], prev[1], prev[2], prev[3], prev[4], false]), 600),
         ];
 
         return () => timers.forEach(timer => clearTimeout(timer));

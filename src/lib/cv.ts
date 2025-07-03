@@ -27,7 +27,7 @@ interface CV {
 }
 
 const cv: CV = {
-    avatar: "/images/avatar-placeholder.png",
+    avatar: "/images/avatar.png",
     name: "Asylbek Komyt",
     profession: "Data Analyst, Web Developer",
     bio: "19 y.o; from Astana, Kazakhstan",

@@ -56,7 +56,7 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async ({ children, params }) =
 
     return (
         <html lang={locale} className={`${geistSans.variable} ${geistMono.variable}`}>
-            <body className="text-white bg-black">
+            <body className="overflow-x-hidden text-white bg-black">
                 <NextIntlClientProvider locale={locale}>
                     <AppProvider>
                         <AOSInitializer />
