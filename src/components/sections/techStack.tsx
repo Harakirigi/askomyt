@@ -46,7 +46,7 @@ const TechStackSection: React.FC = () => {
                     </AnimatePresence>
                 </div>
             </div>
-            <div className="relative flex flex-row items-end pt-10 gap-x-4" data-aos="fade-left" data-aos-offset="120" data-aos-duration="600" data-aos-easing="ease-out">
+            <div className="relative flex flex-row items-end pt-10 group gap-x-4" data-aos="fade-left" data-aos-offset="120" data-aos-duration="600" data-aos-easing="ease-out">
                 {techStacks.map((tech) => (
                     <TechIcon
                         key={tech.name}

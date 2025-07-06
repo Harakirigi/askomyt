@@ -72,7 +72,7 @@ const CV: React.FC = () => {
                             {section.title}
                         </p>
                         {section.items.map((item) => (
-                            <div className="grid grid-cols-[1fr,2fr] p-2 -mx-2 rounded-lg group gap-6 border border-transparent hover:border-gray-600" key={item.id}>
+                            <div className="grid grid-cols-[1fr,2fr] p-2 -mx-2 rounded-none group gap-6 border border-dashed border-transparent hover:border-gray-600 hover:rounded-xl transition-all duration-500" key={item.id}>
                                 <div className="py-2" data-aos="fade-right" data-aos-offset="-1000" data-aos-duration="400" data-aos-easing="ease-out">
                                     <p className="text-sm font-light capitalize text-white-300">{item.year}</p>
                                 </div>

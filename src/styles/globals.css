@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans, sans-serif);
@@ -14,6 +13,24 @@ body {
     font-family: var(--font-geist-sans), sans-serif;
 }
 
+@layer utilities {
+  .bg-grid-dots-angled {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-grid-dots-angled::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 20px 20px;
+    height: 1000px;
+    transform: rotate(45deg);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -39,31 +56,6 @@ body {
   background: theme(colors.accent.50);
   color: white;
 }
-
-/* .btn {
-    width: 100%;
-    max-width: max-content;
-    min-width: 150px;
-    height: 44px;
-
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1rem;
-    font-family: var(--font-geist-sans);
-    transition: all 0.3s;
-
-}
-.btn.primary {
-    background-color: #9FEF00;
-    color: #141D2B;
-}
-.btn.primary:hover {
-    background-color: #75CA06;
-    color: #141D2B;
-} */
-
-
 
 @layer base {
   :root {

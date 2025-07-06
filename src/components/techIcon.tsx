@@ -15,7 +15,7 @@ const TechIcon: React.FC<TechIconProps> = ({ name, icon, accentIcon, setCurrentS
 
     return (
         <div
-            className="p-4 -m-2 transition-colors duration-200 border border-transparent rounded-xl hover:border-accent"
+            className="p-4 -m-2 transition-all duration-200 border border-transparent shadow-lg shadow-transparent rounded-xl hover:border-accent hover:-translate-y-2 hover:translate-x-1 hover:shadow-accent-10"
             onMouseOver={() => {
                 setCurrentStack(name);
                 setIsHovered(true);
