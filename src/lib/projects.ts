@@ -14,12 +14,11 @@ interface Project {
 const projects: Project[] = [
     {
         id: 1,
-        title: "Data Analysis Dashboard",
+        title: "StatGovParser",
         description: "A web-based dashboard for visualizing complex datasets with interactive charts.",
         image: "/portfolio/data-analysis.png",
-        techs: ["react", "next.js", "pandas", "chart.js"],
-        sourceLink: "https://github.com/Harakirigi/data-analysis",
-        previewLink: "https://data-analysis-demo.vercel.app",
+        techs: ["python", "beautiful soup", "tkinter"],
+        sourceLink: "https://github.com/Harakirigi/statGovParser",
         fullDetails:
             "This project is a comprehensive data analysis dashboard built with Next.js and React, utilizing Pandas for data processing and Chart.js for interactive visualizations. It allows users to upload datasets, apply filters, and generate real-time insights through dynamic charts. The application is optimized for performance and accessibility, with a responsive design that works across devices.",
         downloadable: true,

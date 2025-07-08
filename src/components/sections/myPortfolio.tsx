@@ -3,6 +3,7 @@ import ProjectCard from "@components/projectCard"
 import Button from "@components/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import ProjectCardV2 from "@components/projectCardV2";
 
 const MyPortfolioSection: React.FC = () => {
     const t = useTranslations('myPortfolio');
@@ -22,8 +23,8 @@ const MyPortfolioSection: React.FC = () => {
                     </Button>
                 </div>
             </div>
-            <div className="flex flex-row flex-wrap justify-between w-full gap-y-12">
-                {projects.map((project) => (
+            <div className="relative grid w-full grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                {/* {projects.map((project) => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}
@@ -36,7 +37,22 @@ const MyPortfolioSection: React.FC = () => {
                         downloadable={project.downloadable}
                         filePath={project.filePath}
                     />
+                ))} */}
+                {projects.map((project) => (
+                    <ProjectCardV2
+                        key={project.id}
+                        title={project.title}
+                        description={project.description}
+                        image={project.image}
+                        techs={project.techs}
+                        sourceLink={project.sourceLink}
+                        previewLink={project.previewLink}
+                        fullDetails={project.fullDetails}
+                        downloadable={project.downloadable}
+                        filePath={project.filePath}
+                    />
                 ))}
+
             </div>
         </section>
     );

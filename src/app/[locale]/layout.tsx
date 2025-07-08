@@ -8,6 +8,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@i18n/routing';
 import { Toaster } from "@components/ui/sonner"
+import { TooltipProvider } from "@radix-ui/react-tooltip";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -59,11 +60,13 @@ const LocaleLayout: React.FC<LocaleLayoutProps> = async ({ children, params }) =
             <body className="overflow-x-hidden text-white bg-black">
                 <NextIntlClientProvider locale={locale}>
                     <AppProvider>
-                        <AOSInitializer />
-                        <Header />
-                        {children}
-                        <Footer />
-                        <Toaster />
+                        <TooltipProvider>
+                            <AOSInitializer />
+                            <Header />
+                            {children}
+                            <Footer />
+                            <Toaster />
+                        </TooltipProvider>
                     </AppProvider>
                 </NextIntlClientProvider>
             </body>

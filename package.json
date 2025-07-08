@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-tooltip": "^1.2.7",
     "@types/prop-types": "^15.7.15",
     "aos": "^3.0.0-beta.6",
     "class-variance-authority": "^0.7.1",
