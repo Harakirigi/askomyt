@@ -8,7 +8,7 @@ const MyPortfolioSection: React.FC = () => {
     const t = useTranslations('myPortfolio');
 
     return (
-        <section id="portfolio" className="flex flex-col items-start justify-end mt-32 bg-black gap-y-6 h-dvh w-dvh">
+        <section id="portfolio" className="flex flex-col items-start justify-end h-auto mt-32 bg-black gap-y-6 w-dvh">
             <div className="flex flex-row justify-between w-full my-2">
                 <h1 className="text-4xl font-semibold text-gray-300 text-start" data-aos="fade-right" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-out">{t('title')}</h1>
                 <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-out">

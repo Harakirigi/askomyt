@@ -1,68 +1,81 @@
 {
-  "header": {
-    "aboutMe": "About Me",
-    "myProjects": "My Projects",
-    "contactMe": "Contact Me",
-    "myCv": "MY CV",
-    "reachOut": "REACH OUT",
-    "language": "Language",
-    "english": "EN",
-    "russian": "RU",
-    "kazakh": "KZ"
-  },
-  "hero": {
-    "location": "Astana, Kazakhstan",
-    "data": "Data",
-    "scientist": "Scientist",
-    "software": "Software",
-    "developer": "Developer",
-    "name": "Asylbek Komyt",
-    "myPortfolio": "MY PORTFOLIO",
-    "contactMe": "CONTACT ME"
-  },
-  "techStack": {
-    "iBuildWith": "I build with",
-    "everything": "everything"
-  },
-  "myPortfolio": {
-    "title": "My Portfolio",
-    "showAll": "Show All Projects",
-    "back": "Back"
-  },
-  "footer": {
-    "footerDescription": "FullStack Developer and Data Analyst based in Astana, Kazakhstan.",
-    "home": "Home",
-    "contact": "Contact",
-    "cv": "CV",
-    "copyright": "© {year} Asylbek Komyt. All rights reserved."
-  },
-  "contact": {
-    "title": "Get in Touch",
-    "namePlaceholder": "Your Name",
-    "messagePlaceholder": "Your Message",
-    "send": "Send Message",
-    "email": "nkomyt2@gmail.com",
-    "phone": "+77787050395",
-    "github": "GitHub",
-    "linkedin": "LinkedIn"
-  },
-  "reachMe": {
-    "title": "Reach Me",
-    "email": "nkomyt2@gmail.com",
-    "phone": "+77787050395",
-    "github": "GitHub",
-    "linkedin": "LinkedIn"
-  },
-  "cv": {
-    "back": "Back",
-    "downloadCV": "Download CV",
-    "cutItDown": "Cut it Down",
-    "about": "About"
-  },
-  "projectDetails": {
-    "back": "Back",
-    "sourceCode": "Source Code",
-    "preview": "Preview",
-    "download": "Download"
-  }
+    "header": {
+        "aboutMe": "About Me",
+        "myProjects": "My Projects",
+        "contactMe": "Contact Me",
+        "myCv": "MY CV",
+        "reachOut": "REACH OUT",
+        "language": "Language",
+        "english": "EN",
+        "russian": "RU",
+        "kazakh": "KZ"
+    },
+    "hero": {
+        "location": "Astana, Kazakhstan",
+        "data": "Data",
+        "scientist": "Scientist",
+        "software": "Software",
+        "developer": "Developer",
+        "name": "Asylbek Komyt",
+        "myPortfolio": "MY PORTFOLIO",
+        "contactMe": "CONTACT ME"
+    },
+    "techStack": {
+        "iBuildWith": "I build with",
+        "everything": "anything"
+    },
+    "myPortfolio": {
+        "title": "My Portfolio",
+        "showAll": "Show All Projects",
+        "back": "Back"
+    },
+    "footer": {
+        "footerDescription": "FullStack Developer and Data Analyst based in Astana, Kazakhstan.",
+        "home": "Home",
+        "contact": "Contact",
+        "cv": "CV",
+        "copyright": "© {year} Asylbek Komyt. All rights reserved."
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "namePlaceholder": "Your Name",
+        "messagePlaceholder": "Your Message",
+        "send": "Send Message",
+        "email": "nkomyt2@gmail.com",
+        "phone": "+77787050395",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "reachMe": {
+        "title": "Reach Me",
+        "email": "nkomyt2@gmail.com",
+        "phone": "+77787050395",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "cv": {
+        "back": "Back",
+        "downloadCV": "Download CV",
+        "cutItDown": "Cut it Down",
+        "about": "About"
+    },
+    "projectDetails": {
+        "back": "Back",
+        "sourceCode": "Source Code",
+        "preview": "Preview",
+        "download": "Download"
+    },
+    "whyMe": {
+        "header": "Not Your Average Developer",
+        "f1": "Full-Stack Mindset",
+        "fd1": "I understand both frontend elegance and backend logic. This means faster problem-solving, cleaner architecture, and better collaboration across the stack.",
+        "f2": "Secure by Design",
+        "fd2": "Security is not an afterthought. I apply secure coding practices and understand vulnerabilities — from databases to APIs.",
+        "f3": "Rapid Learner, Adaptive Mind",
+        "fd3": "Tech evolves fast—and so do I. I pick up new tools and frameworks quickly, adapting to any project or stack.",
+        "f4": "Engineering with Business Context",
+        "fd4": "I think beyond code — I understand how features align with goals, metrics, and ROI.",
+        "f5": "Versatile Across Domains",
+        "fd5": "From data pipelines to responsive UIs, I’ve worked across domains—web dev, analytics, backend, and even cybersecurity."
+    }
 }

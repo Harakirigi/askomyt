@@ -102,8 +102,13 @@ const config = {
     			'96': '24rem'
     		},
     		screens: {
-    			xs: '480px',
-    			'3xl': '1920px'
+    			smallMobile: { max: '499px' },
+                mobile: { max: '699px' },
+                bigMobile: { max: '799px' },
+                tablet: { max: '999px' },
+                bigTablet: { max: '1199px' },
+                responsive: { max: '1799px' },
+                PC: { min: '1800px'}
     		},
     		fontSize: {
     			buttonTextSize: '1rem',

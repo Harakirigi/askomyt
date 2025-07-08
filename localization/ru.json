@@ -1,68 +1,68 @@
 {
-  "header": {
-    "aboutMe": "Обо мне",
-    "myProjects": "Мои проекты",
-    "contactMe": "Связаться со мной",
-    "myCv": "Моё резюме",
-    "reachOut": "Связаться",
-    "language": "Язык",
-    "english": "EN",
-    "russian": "RU",
-    "kazakh": "KZ"
-  },
-  "hero": {
-    "location": "Астана, Казахстан",
-    "data": "Данные",
-    "scientist": "Учёный",
-    "software": "Программное",
-    "developer": "Разработчик",
-    "name": "Асылбек Комыт",
-    "myPortfolio": "Моё портфолио",
-    "contactMe": "Связаться со мной"
-  },
-  "techStack": {
-    "iBuildWith": "Я создаю с",
-    "everything": "всем"
-  },
-  "myPortfolio": {
-    "title": "Мое Портфолио",
-    "showAll": "Показать все работы",
-    "back": "Назад"
-  },
-  "footer": {
-    "footerDescription": "FullStack разработчик и аналитик данных из Астаны, Казахстан.",
-    "home": "Главная",
-    "contact": "Контакты",
-    "cv": "Резюме",
-    "copyright": "© {year} Асылбек Комыт. Все права защищены."
-  },
-  "contact": {
-    "title": "Связаться со мной",
-    "namePlaceholder": "Ваше имя",
-    "messagePlaceholder": "Ваше сообщение",
-    "send": "Отправить сообщение",
-    "email": "nkomyt2@gmail.com",
-    "phone": "+77787050395",
-    "github": "GitHub",
-    "linkedin": "LinkedIn"
-  },
-  "reachMe": {
-    "title": "Связаться со мной",
-    "email": "nkomyt2@gmail.com",
-    "phone": "+77787050395",
-    "github": "GitHub",
-    "linkedin": "LinkedIn"
-  },
-  "cv": {
-    "back": "Назад",
-    "downloadCV": "Скачать резюме",
-    "cutItDown": "Сократить",
-    "about": "Обо мне"
-  },
-  "projectDetails": {
-    "back": "Назад",
-    "sourceCode": "Исходный код",
-    "preview": "Предпросмотр",
-    "download": "Скачать"
-  }
+    "header": {
+        "aboutMe": "Обо мне",
+        "myProjects": "Мои проекты",
+        "contactMe": "Связаться со мной",
+        "myCv": "Моё резюме",
+        "reachOut": "Связаться",
+        "language": "Язык",
+        "english": "EN",
+        "russian": "RU",
+        "kazakh": "KZ"
+    },
+    "hero": {
+        "location": "Астана, Казахстан",
+        "data": "Данные",
+        "scientist": "Учёный",
+        "software": "Программное",
+        "developer": "Разработчик",
+        "name": "Асылбек Комыт",
+        "myPortfolio": "Моё портфолио",
+        "contactMe": "Связаться со мной"
+    },
+    "techStack": {
+        "iBuildWith": "Я создаю с",
+        "everything": "всем"
+    },
+    "myPortfolio": {
+        "title": "Мое Портфолио",
+        "showAll": "Показать все работы",
+        "back": "Назад"
+    },
+    "footer": {
+        "footerDescription": "FullStack разработчик и аналитик данных из Астаны, Казахстан.",
+        "home": "Главная",
+        "contact": "Контакты",
+        "cv": "Резюме",
+        "copyright": "© {year} Асылбек Комыт. Все права защищены."
+    },
+    "contact": {
+        "title": "Связаться со мной",
+        "namePlaceholder": "Ваше имя",
+        "messagePlaceholder": "Ваше сообщение",
+        "send": "Отправить сообщение",
+        "email": "nkomyt2@gmail.com",
+        "phone": "+77787050395",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "reachMe": {
+        "title": "Связаться со мной",
+        "email": "nkomyt2@gmail.com",
+        "phone": "+77787050395",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "cv": {
+        "back": "Назад",
+        "downloadCV": "Скачать резюме",
+        "cutItDown": "Сократить",
+        "about": "Обо мне"
+    },
+    "projectDetails": {
+        "back": "Назад",
+        "sourceCode": "Исходный код",
+        "preview": "Предпросмотр",
+        "download": "Скачать"
+    }
 }

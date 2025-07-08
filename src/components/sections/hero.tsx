@@ -22,23 +22,23 @@ const HeroSection: React.FC = () => {
     }, []);
 
     return (
-        <section className="flex flex-col items-center justify-center bg-black gap-y-6 h-dvh w-dvh">
+        <section className="flex flex-col items-center justify-center bg-black gap-y-6 h-dvh w-dvh mobile:items-start mobile:max-w-[90%]">
             <div className="flex flex-row items-center gap-x-1">
                 <Image src="/icons/location-icon.svg" alt="location-icon" width={24} height={24} />
                 <p className="text-sm text-white-500">{t('location')}</p>
             </div>
-            <div className="flex flex-col items-center gap-4">
-                <h1 className={`text-6xl font-semibold uppercase transition-all duration-200 opacity-0 ${!blurry[0] && 'opacity-100'}`}>
+            <div className="flex flex-col items-center gap-4 mobile:items-start">
+                <h1 className={`text-6xl font-semibold uppercase transition-all duration-200 opacity-0 smallMobile:text-4xl mobile:text-5xl ${!blurry[0] && 'opacity-100'}`}>
                     <span className={`transition-all duration-200 text-accent blur-md ${!blurry[1] && 'blur-none'}`}>{t('data')} </span>
                     <span className={`text-white transition-all duration-200 blur-md ${!blurry[2] && 'blur-none'}`}>{t('scientist')}</span>
                 </h1>
-                <h1 className={`text-5xl font-semibold uppercase transition-all duration-200 opacity-0 ${!blurry[3] && 'opacity-100'}`}>
+                <h1 className={`text-5xl font-semibold uppercase transition-all duration-200 opacity-0 smallMobile:3xl mobile:text-4xl ${!blurry[3] && 'opacity-100'}`}>
                     <span className={`text-white transition-all duration-200 blur-md ${!blurry[4] && 'blur-none'}`}>{t('software')} </span>
                     <span className={`transition-all duration-200 text-accent blur-md ${!blurry[5] && 'blur-none'}`}>{t('developer')}</span>
                 </h1>
             </div>
-            <p className="text-base font-semibold text-white uppercase">{t('name')}</p>
-            <div className="flex flex-row gap-x-6">
+            <p className="text-base font-semibold text-white uppercase mobile:text-sm">{t('name')}</p>
+            <div className="flex flex-row gap-x-6 mobile:flex-col gap-y-4">
                 <Button
                     variant="accentOutline"
                     icon={<Image src="/icons/box-icon.svg" alt="box-icon" width={24} height={24} />}

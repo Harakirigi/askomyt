@@ -28,14 +28,15 @@ const TechStackSection: React.FC = () => {
     ];
 
     return (
-        <section className="flex flex-row items-center justify-between h-40 bg-black gap-y-6 w-dvh">
+        <section className="flex flex-row items-center justify-between bg-black min-h-40 gap-y-6 w-dvh bigTablet:flex-col bigTablet:gap-y-20">
             <div className="flex flex-col items-center justify-center" data-aos="fade-right" data-aos-offset="100" data-aos-duration="600" data-aos-easing="ease-out">
                 <div className="relative h-12">
-                    <p className="text-5xl font-medium text-gray-300 uppercase">{t('iBuildWith')}</p>
+                    {/* <p className="text-5xl font-medium text-gray-300 uppercase">{t('iBuildWith')}</p> */}
+                    <p className="text-5xl font-medium text-transparent uppercase bg-clip-text bg-gradient-to-t from-gray-300 to-gray-400">{t('iBuildWith')}</p>
                     <AnimatePresence mode="wait">
                         <motion.p
                             key={currentStack}
-                            className="absolute text-5xl font-medium text-gray-300 uppercase"
+                            className="absolute text-5xl font-medium text-transparent uppercase bg-clip-text bg-gradient-to-b from-gray-300 to-gray-400"
                             initial={{ y: 20, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: -20, opacity: 0 }}
