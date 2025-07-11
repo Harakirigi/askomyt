@@ -123,7 +123,16 @@ const config = {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',
     			sm: 'calc(var(--radius) - 4px)'
-    		}
+    		},
+            keyframes: {
+                bounceUp: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-6px)' },
+                    },
+            },
+            animation: {
+                bounceUp: 'bounceUp 1s ease-in-out infinite',
+            },
     	}
     },
     plugins: [

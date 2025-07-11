@@ -17,7 +17,8 @@ const Button: React.FC<ButtonProps> = ({
     icon,
     disabled = false,
     onClick,
-    type
+    type,
+    ...props
 }) => {
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         if (disabled) {
@@ -59,6 +60,7 @@ const Button: React.FC<ButtonProps> = ({
             disabled={disabled}
             aria-disabled={disabled}
             type={type}
+            {...props}
         >
             {icon && <span>{icon}</span>}
             {children}

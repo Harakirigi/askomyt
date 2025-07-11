@@ -16,15 +16,17 @@ const TechStackSection: React.FC = () => {
     const techStacks: TechStack[] = [
         { name: "next.js", icon: "/icons/next-icon.svg", accentIcon: "/icons/next-icon-accent.svg" },
         { name: "react", icon: "/icons/react-icon.svg", accentIcon: "/icons/react-icon-accent.svg" },
+        { name: "react native", icon: "/icons/react-native-icon.svg", accentIcon: "/icons/react-native-icon-accent.svg" },
+        { name: "flutter", icon: "/icons/flutter-icon.svg", accentIcon: "/icons/flutter-icon-accent.svg" },
         { name: "tailwind", icon: "/icons/tailwind-icon.svg", accentIcon: "/icons/tailwind-icon-accent.svg" },
-        { name: "elixir", icon: "/icons/elixir-icon.svg", accentIcon: "/icons/elixir-icon-accent.svg" },
-        { name: "phoenix", icon: "/icons/phoenix-icon.svg", accentIcon: "/icons/phoenix-icon-accent.svg" },
         { name: "node.js", icon: "/icons/node-icon.svg", accentIcon: "/icons/node-icon-accent.svg" },
         { name: "javascript", icon: "/icons/js-icon.svg", accentIcon: "/icons/js-icon-accent.svg" },
         { name: "python", icon: "/icons/python-icon.svg", accentIcon: "/icons/python-icon-accent.svg" },
-        { name: "numpy", icon: "/icons/numpy-icon.svg", accentIcon: "/icons/numpy-icon-accent.svg" },
         { name: "pandas", icon: "/icons/pandas-icon.svg", accentIcon: "/icons/pandas-icon-accent.svg" },
-        { name: "figma", icon: "/icons/figma-icon.svg", accentIcon: "/icons/figma-icon-accent.svg" },
+        { name: "docker", icon: "/icons/docker-icon.svg", accentIcon: "/icons/docker-icon-accent.svg" },
+        { name: "mysql / mongodb", icon: "/icons/db-icon.svg", accentIcon: "/icons/db-icon-accent.svg" },
+        // { name: "figma", icon: "/icons/figma-icon.svg", accentIcon: "/icons/figma-icon-accent.svg" },
+        // { name: "linux", icon: "/icons/linux-icon.svg", accentIcon: "/icons/linux-icon-accent.svg" },
     ];
 
     return (

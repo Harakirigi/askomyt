@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useState, useEffect } from "react";
 import { DownloadIcon, ExternalLink, Eye, Github } from "lucide-react";
 import Tooltip from "@components/tooltip";
+import { useTranslations } from "next-intl";
 
 interface ProjectCard {
     title: string;
@@ -27,6 +28,7 @@ const ProjectCardV2 = ({
     downloadable,
     filePath,
 }: ProjectCard) => {
+    const t = useTranslations("projects");
     const [isHovered, setIsHovered] = useState(false);
     const [fileSize, setFileSize] = useState<string | null>(null);
 
@@ -56,14 +58,14 @@ const ProjectCardV2 = ({
 
     return (
         <>
-            <div className="flex-1 pt-10 pb-14 group">
-                <div className="relative flex-1 p-4 border border-dashed border-black-dark bg-black-lighter rounded-2xl">
-                    <div className="relative w-full border border-secondary rounded-xl h-[100px] max-w-[calc(100%-60px)]">
+            <div className="flex-1 pt-10 pb-14">
+                <div className="relative flex-1 p-4 border border-dashed border-black-lighter bg-black-lighter rounded-2xl group">
+                    <div className="relative w-full rounded-xl h-[100px] max-w-[calc(100%-60px)]">
                         <Image
-                            src={image}
+                            src={t(image)}
                             alt={`${title}_image`}
                             fill
-                            className="object-cover transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-[1.03]"
+                            className="object-cover transition-all duration-500 rounded-lg grayscale group-hover:grayscale-0 group-hover:scale-[1.03]"
                             sizes="550px"
                         />
                     </div>
@@ -79,11 +81,11 @@ const ProjectCardV2 = ({
 
                                 <a
                                     className="relative inline-block text-xl font-semibold"
-                                    href={fullDetails}
+                                    href={t(fullDetails || "#")}
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => setIsHovered(false)}
                                 >
-                                    {title}
+                                    {t(title)}
                                     <span className={`
                                         absolute left-0 -bottom-1 w-full h-0.5 bg-white
                                         transition-all duration-500 ease-in-out
@@ -98,7 +100,7 @@ const ProjectCardV2 = ({
                             </Tooltip>
                         </div>
                         <div className="py-1">
-                            <p className="text-base text-white-300 font-extralight">{description}</p>
+                            <p className="text-base text-white-300 font-extralight">{t(description)}</p>
                         </div>
                         <div className="flex flex-wrap gap-2">
                             {techs.map((tech, index) => (
@@ -112,10 +114,10 @@ const ProjectCardV2 = ({
                         <Tooltip
                             content="Source Code"
                             position="top"
-                            childAbsolute
+                            childAbsolute={true}
                             delay={0.2}
                         >
-                            <div onClick={() => window.open(sourceLink, "_blank", "noopener,noreferrer")} className="absolute px-3 overflow-hidden group/inner text-gray-400 py-2 -ml-4 transition-all duration-200 border border-gray-500 shadow-[2px_5px_15px_0px] cursor-pointer translate-y-9 rounded-xl bg-black-light group-hover:translate-x-6 group-hover:-translate-y-1 hover:bg-black hover:text-white shadow-transparent hover:border-accent hover:shadow-accent-50 pr-7">
+                            <div onClick={() => window.open(sourceLink, "_blank", "noopener,noreferrer")} className="absolute px-3 -left-4 overflow-hidden group/inner text-gray-400 py-2 transition-all duration-200 border border-gray-500 shadow-[2px_5px_15px_0px] cursor-pointer translate-y-9 rounded-xl bg-black-light group-hover:translate-x-6 group-hover:-translate-y-1 hover:bg-black hover:text-white shadow-transparent hover:border-accent hover:shadow-accent-50 pr-7">
                                 <span className="flex gap-2">
                                     <Github width={20} height={20} />
                                     <a className="text-sm">{sourceLink.slice(0, 30)}...</a>
@@ -123,7 +125,6 @@ const ProjectCardV2 = ({
                                 </span>
                             </div>
                         </Tooltip>
-
                     )}
                     {downloadable && (
                             <div onClick={() => window.open(filePath, "_blank", "noopener,noreferrer")} className="absolute flex items-center justify-center px-3 py-2 text-gray-400 transition-all duration-200 border shadow-[2px_5px_15px_0px] border-gray-500 cursor-pointer aspect-square top-4 right-4 rounded-xl bg-black-light group-hover:-translate-y-6 group-hover:rotate-12 hover:bg-black hover:text-white shadow-transparent hover:border-accent hover:shadow-accent-50">

@@ -29,7 +29,7 @@ const Tooltip = ({
 
     useEffect(() => {
         if (childAbsolute) {
-            setStyle({ transform: 'translateX(-50%)', top: '10px' })
+            setStyle({ transform: 'translateX(-50%)'})
         }
     }, [childAbsolute])
 

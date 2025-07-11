@@ -1,4 +1,5 @@
 'use client'
+import ContactMeSection from "@components/sections/contactMe";
 import HeroSection from "@components/sections/hero";
 import MyPortfolioSection from "@components/sections/myPortfolio";
 import TechStackSection from "@components/sections/techStack";
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
                 <div className="h-[300px]"></div>
                 <WhyMeSection />
                 <MyPortfolioSection />
+                <ContactMeSection />
             </div>
         </>
     );

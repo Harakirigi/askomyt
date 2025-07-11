@@ -7,6 +7,7 @@ import NavLink from './navLink';
 import LanguageSwitcher from './languageSwitcher';
 import { useAppContext } from '@contexts/appContext';
 import { scrollToSection } from 'utils/scrollToSection';
+import { LucideScanEye } from 'lucide-react';
 
 const Header: React.FC = () => {
     const t = useTranslations('header');
@@ -43,7 +44,8 @@ const Header: React.FC = () => {
                 <LanguageSwitcher />
                 <Button
                     variant="accentOutline"
-                    icon={<Image src="/icons/download-icon.svg" alt="Download icon" width={24} height={24} />}
+                    styles={"group"}
+                    icon={<LucideScanEye width={24} height={24} className='transition-transform duration-300 ease-out group-hover:scale-90' />}
                     onClick={() => window.location.href = '/CV'}
                     aria-label="Download CV"
                 >
@@ -51,7 +53,8 @@ const Header: React.FC = () => {
                 </Button>
                 <Button
                     variant="accent"
-                    icon={<Image src="/icons/lightning-icon.svg" alt="Contact icon" width={24} height={24} />}
+                    styles={"group"}
+                    icon={<Image src="/icons/lightning-icon.svg" alt="Contact icon" width={24} height={24} className='transition-transform duration-300 ease-out group-hover:scale-90' />}
                     onClick={() => window.location.href = '/contact'}
                     aria-label="Contact me"
                 >

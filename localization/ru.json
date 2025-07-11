@@ -27,7 +27,8 @@
     "myPortfolio": {
         "title": "Мое Портфолио",
         "showAll": "Показать все работы",
-        "back": "Назад"
+        "back": "Назад",
+        "statGovParser": "/images/projects/statGovParser-en.png"
     },
     "footer": {
         "footerDescription": "FullStack разработчик и аналитик данных из Астаны, Казахстан.",

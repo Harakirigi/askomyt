@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { useRouter, usePathname } from '@/i18n/navigation';
+import { useRouter, usePathname } from '@i18n/navigation';
 import { useTranslations } from 'next-intl';
 import { Globe2Icon } from 'lucide-react';
 
@@ -25,9 +25,9 @@ const LanguageSwitcher: React.FC = () => {
         <div className="relative">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center justify-center gap-2 px-4 font-semibold text-white transition-all duration-300 bg-transparent border border-white rounded-lg h-11 hover:text-white-400 hover:border-white-400"
+                className="flex items-center justify-center gap-2 px-4 font-semibold text-white transition-all duration-300 bg-transparent border border-white rounded-lg group h-11 hover:text-white-400 hover:border-white-400"
             >
-                <Globe2Icon />
+                <Globe2Icon className='transition-transform duration-300 ease-out group-hover:scale-90' />
             </button>
             {isOpen && (
                 <div className="absolute right-0 z-50 w-[58px] mt-2 border rounded-lg shadow-lg bg-black-dark border-white">
