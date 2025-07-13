@@ -2,6 +2,7 @@
 import ContactMeSection from "@components/sections/contactMe";
 import HeroSection from "@components/sections/hero";
 import MyPortfolioSection from "@components/sections/myPortfolio";
+import MyServicesSection from "@components/sections/myServices";
 import TechStackSection from "@components/sections/techStack";
 import WhyMeSection from "@components/sections/whyMe";
 
@@ -13,6 +14,8 @@ const HomePage: React.FC = () => {
                 <TechStackSection />
                 <div className="h-[300px]"></div>
                 <WhyMeSection />
+                <div className="h-[200px]"></div>
+                <MyServicesSection />
                 <MyPortfolioSection />
                 <ContactMeSection />
             </div>

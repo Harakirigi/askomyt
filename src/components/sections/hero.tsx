@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from "react";
 import { scrollToSection } from "utils/scrollToSection";
+import { Send } from "lucide-react";
 
 const HeroSection: React.FC = () => {
     const t = useTranslations('hero');
@@ -48,8 +49,11 @@ const HeroSection: React.FC = () => {
                 </Button>
                 <Button
                     variant="accent"
-                    icon={<Image src="/icons/contact-icon.svg" alt="contact-icon" width={24} height={24} />}
+                    styles="group overflow-hidden relative"
+                    icon={<Send width={20} className="transition-transform duration-300 ease-out group-hover:translate-x-[45px] group-hover:-translate-y-[45px]" />}
+                    onClick={() => window.location.href = '/projects'}
                 >
+                    <Send width={20} className="absolute transition-transform duration-300 ease-out -translate-x-24 translate-y-11 group-hover:-translate-x-14 group-hover:translate-y-0" />
                     {t('contactMe')}
                 </Button>
             </div>
